@@ -1,4 +1,7 @@
 {
+    files = {
+        "/usr/include/c++/16/bits/std.cc"
+    },
     moduleinfo = "{\
   \"revision\": 0,\
   \"rules\": [\
@@ -16,9 +19,6 @@
   \"version\": 1\
 }\
 ",
-    files = {
-        "/usr/include/c++/16/bits/std.cc"
-    },
     values = {
         "-Qunused-arguments",
         "-m64",

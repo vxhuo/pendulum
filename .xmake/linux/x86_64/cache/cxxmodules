@@ -1,117 +1,154 @@
 {
     pendulum = {
-        sourcebatch_sum = "efb9a2b051fcc1f1",
         ["c++.modules"] = {
-            ["/usr/include/c++/16/bits/std.cc"] = ref("pendulum", "module_mapper", "std"),
-            ["src/main.cpp"] = {
-                sourcefile = "src/main.cpp",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o",
-                deps = ref("pendulum", "module_mapper", "src/main.cpp", "deps")
-            },
-            ["/usr/include/c++/16/bits/std.compat.cc"] = ref("pendulum", "module_mapper", "std.compat"),
-            ["src/types.cppm"] = ref("pendulum", "module_mapper", "types")
-        },
-        module_mapper = {
-            ["src/main.cpp"] = {
-                sourcefile = "src/main.cpp",
-                deps = {
-                    types = {
-                        method = "by-name",
-                        name = "types",
-                        unique = false,
-                        headerunit = false,
-                        key = false
-                    }
-                },
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o",
-                sourcealias = true
-            },
-            ["src/types.cppm"] = {
-                method = "by-name",
-                name = "types",
-                sourcefile = "src/types.cppm",
-                interface = true,
-                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o",
-                sourcealias = true
-            },
-            std = {
-                method = "by-name",
-                name = "std",
-                sourcefile = "/usr/include/c++/16/bits/std.cc",
-                interface = true,
-                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/e9968aa214a321aa/std.pcm",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o"
-            },
-            ["/usr/include/c++/16/bits/std.cc"] = {
-                method = "by-name",
-                name = "std",
-                sourcefile = "/usr/include/c++/16/bits/std.cc",
-                interface = true,
-                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/e9968aa214a321aa/std.pcm",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o",
-                sourcealias = true
-            },
-            types = {
-                method = "by-name",
-                name = "types",
-                sourcefile = "src/types.cppm",
-                interface = true,
-                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o"
-            },
             ["/usr/include/c++/16/bits/std.compat.cc"] = {
-                method = "by-name",
-                name = "std.compat",
                 sourcefile = "/usr/include/c++/16/bits/std.compat.cc",
+                method = "by-name",
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/f5c94587ab30ce52/std.compat.pcm",
+                interface = true,
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.compat.cc.o",
+                name = "std.compat",
                 deps = {
                     std = {
+                        key = false,
                         method = "by-name",
                         name = "std",
-                        unique = false,
                         headerunit = false,
-                        key = false
+                        unique = false
+                    }
+                }
+            },
+            ["src/tick.cppm"] = {
+                sourcefile = "src/tick.cppm",
+                method = "by-name",
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/7768fcb61f880c03/tick.pcm",
+                interface = true,
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/tick.cppm.o",
+                name = "tick",
+                deps = {
+                    types = {
+                        key = false,
+                        method = "by-name",
+                        name = "types",
+                        headerunit = false,
+                        unique = false
+                    }
+                }
+            },
+            ["/usr/include/c++/16/bits/std.cc"] = {
+                sourcefile = "/usr/include/c++/16/bits/std.cc",
+                method = "by-name",
+                name = "std",
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o",
+                interface = true,
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/e9968aa214a321aa/std.pcm"
+            },
+            ["src/main.cpp"] = {
+                sourcefile = "src/main.cpp",
+                deps = {
+                    tick = {
+                        key = false,
+                        method = "by-name",
+                        name = "tick",
+                        headerunit = false,
+                        unique = false
+                    },
+                    types = {
+                        key = false,
+                        method = "by-name",
+                        name = "types",
+                        headerunit = false,
+                        unique = false
                     }
                 },
-                interface = true,
-                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/f5c94587ab30ce52/std.compat.pcm",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.compat.cc.o",
-                sourcealias = true
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o"
             },
-            ["std.compat"] = {
+            ["src/types.cppm"] = {
+                sourcefile = "src/types.cppm",
                 method = "by-name",
-                name = "std.compat",
-                sourcefile = "/usr/include/c++/16/bits/std.compat.cc",
+                name = "types",
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o",
                 interface = true,
-                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/f5c94587ab30ce52/std.compat.pcm",
-                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.compat.cc.o",
-                deps = ref("pendulum", "module_mapper", "/usr/include/c++/16/bits/std.compat.cc", "deps")
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm"
             }
         },
+        module_mapper = {
+            ["/usr/include/c++/16/bits/std.cc"] = {
+                sourcefile = "/usr/include/c++/16/bits/std.cc",
+                method = "by-name",
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/e9968aa214a321aa/std.pcm",
+                name = "std",
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o",
+                interface = true,
+                sourcealias = true
+            },
+            ["src/main.cpp"] = {
+                sourcefile = "src/main.cpp",
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o",
+                deps = ref("pendulum", "c++.modules", "src/main.cpp", "deps"),
+                sourcealias = true
+            },
+            ["std.compat"] = ref("pendulum", "c++.modules", "/usr/include/c++/16/bits/std.compat.cc"),
+            ["/usr/include/c++/16/bits/std.compat.cc"] = {
+                sourcefile = "/usr/include/c++/16/bits/std.compat.cc",
+                method = "by-name",
+                name = "std.compat",
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/f5c94587ab30ce52/std.compat.pcm",
+                interface = true,
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.compat.cc.o",
+                deps = ref("pendulum", "c++.modules", "/usr/include/c++/16/bits/std.compat.cc", "deps"),
+                sourcealias = true
+            },
+            types = ref("pendulum", "c++.modules", "src/types.cppm"),
+            ["src/tick.cppm"] = {
+                sourcefile = "src/tick.cppm",
+                method = "by-name",
+                name = "tick",
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/7768fcb61f880c03/tick.pcm",
+                interface = true,
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/tick.cppm.o",
+                deps = ref("pendulum", "c++.modules", "src/tick.cppm", "deps"),
+                sourcealias = true
+            },
+            std = ref("pendulum", "c++.modules", "/usr/include/c++/16/bits/std.cc"),
+            tick = ref("pendulum", "c++.modules", "src/tick.cppm"),
+            ["src/types.cppm"] = {
+                sourcefile = "src/types.cppm",
+                method = "by-name",
+                bmifile = "build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm",
+                name = "types",
+                objectfile = "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o",
+                interface = true,
+                sourcealias = true
+            }
+        },
+        sourcebatch_sum = "a193e20b0c1c1add",
         ["c++.modules.built_artifacts"] = {
             objectfiles = {
+                "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o",
                 "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o",
-                "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o"
+                "build/.objs/pendulum/linux/x86_64/release/src/tick.cppm.o"
             },
+            headerunits = { },
             modules = {
-                "src/types.cppm",
                 "/usr/include/c++/16/bits/std.cc",
+                "src/types.cppm",
+                "src/tick.cppm",
                 "src/main.cpp"
-            },
-            headerunits = { }
+            }
         },
         ["c++.build.sourcebatch"] = {
+            sourcekind = "cxx",
             rulename = "c++.build",
-            sourcefiles = {
-                "src/main.cpp"
-            },
             objectfiles = {
                 "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o"
             },
             dependfiles = {
                 "build/.deps/pendulum/linux/x86_64/release/src/main.cpp.o.d"
             },
-            sourcekind = "cxx"
+            sourcefiles = {
+                "src/main.cpp"
+            }
         }
     }
 }

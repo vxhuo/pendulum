@@ -1,5 +1,4 @@
 {
-    lastmtime = 1790735588,
     values = {
         "/usr/bin/clang++",
         {
@@ -33,6 +32,7 @@
             "-DNDEBUG"
         }
     },
+    lastmtime = 0,
     files = {
         "/usr/include/c++/16/bits/std.cc"
     }

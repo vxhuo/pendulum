@@ -1,4 +1,7 @@
 {
+    files = {
+        "src/main.cpp"
+    },
     moduleinfo = "{\
   \"revision\": 0,\
   \"rules\": [\
@@ -7,6 +10,9 @@
       \"requires\": [\
         {\
           \"logical-name\": \"types\"\
+        },\
+        {\
+          \"logical-name\": \"tick\"\
         }\
       ]\
     }\
@@ -14,9 +20,6 @@
   \"version\": 1\
 }\
 ",
-    files = {
-        "src/main.cpp"
-    },
     values = {
         "-Qunused-arguments",
         "-m64",

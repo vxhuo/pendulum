@@ -1,6 +1,7 @@
 {
     files = {
         "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o",
+        "build/.objs/pendulum/linux/x86_64/release/src/tick.cppm.o",
         "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o",
         "build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.cc.o"
     },

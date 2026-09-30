@@ -1,7 +1,4 @@
 {
-    files = {
-        "src/main.cpp"
-    },
     values = {
         "/usr/bin/clang++",
         {
@@ -33,12 +30,11 @@
             "-march=native",
             "-flto=thin",
             "-DNDEBUG",
-            "-fmodule-file=tick=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/7768fcb61f880c03/tick.pcm",
             "-fmodule-file=types=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm"
         }
     },
-    lastmtime = 0,
-    depfiles_format = "gcc",
-    depfiles = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o: src/main.cpp\
-"
+    files = {
+        "src/tick.cppm"
+    },
+    lastmtime = 1790739754
 }

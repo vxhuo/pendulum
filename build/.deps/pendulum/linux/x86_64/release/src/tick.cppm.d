@@ -1,24 +1,4 @@
 {
-    files = {
-        "src/types.cppm"
-    },
-    moduleinfo = "{\
-  \"revision\": 0,\
-  \"rules\": [\
-    {\
-      \"primary-output\": \"build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o\",\
-      \"provides\": [\
-        {\
-          \"is-interface\": true,\
-          \"logical-name\": \"types\",\
-          \"source-path\": \"src/types.cppm\"\
-        }\
-      ]\
-    }\
-  ],\
-  \"version\": 1\
-}\
-",
     values = {
         "-Qunused-arguments",
         "-m64",
@@ -48,5 +28,30 @@
         "-march=native",
         "-flto=thin",
         "-DNDEBUG"
-    }
+    },
+    files = {
+        "src/tick.cppm"
+    },
+    moduleinfo = "{\
+  \"revision\": 0,\
+  \"rules\": [\
+    {\
+      \"primary-output\": \"build/.objs/pendulum/linux/x86_64/release/src/tick.cppm.o\",\
+      \"provides\": [\
+        {\
+          \"is-interface\": true,\
+          \"logical-name\": \"tick\",\
+          \"source-path\": \"src/tick.cppm\"\
+        }\
+      ],\
+      \"requires\": [\
+        {\
+          \"logical-name\": \"types\"\
+        }\
+      ]\
+    }\
+  ],\
+  \"version\": 1\
+}\
+"
 }
