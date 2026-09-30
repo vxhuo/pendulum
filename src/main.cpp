@@ -1,5 +1,6 @@
 
 #include <fmt/core.h>
+#include <raylib.h>
 
 
 import types;
@@ -7,5 +8,4 @@ import types;
 
 auto main() -> s32
 {
-    fmt::println("hello world");
 }

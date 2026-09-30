@@ -1,20 +1,92 @@
 {
-    libsdl3 = {
-        __requirestr = "libsdl3",
-        static = true,
+    raylib = {
+        version = "6.0.0",
+        links = {
+            "raylib",
+            "Xrandr",
+            "Xinerama",
+            "Xcursor",
+            "Xrender",
+            "X11",
+            "Xi",
+            "Xfixes",
+            "Xext",
+            "X11-xcb",
+            "xcb",
+            "xcb-composite",
+            "xcb-damage",
+            "xcb-dbe",
+            "xcb-dpms",
+            "xcb-dri2",
+            "xcb-dri3",
+            "xcb-glx",
+            "xcb-present",
+            "xcb-randr",
+            "xcb-record",
+            "xcb-render",
+            "xcb-res",
+            "xcb-screensaver",
+            "xcb-shape",
+            "xcb-shm",
+            "xcb-sync",
+            "xcb-xf86dri",
+            "xcb-xfixes",
+            "xcb-xinerama",
+            "xcb-xinput",
+            "xcb-xkb",
+            "xcb-xtest",
+            "xcb-xv",
+            "xcb-xvmc",
+            "Xau",
+            "Xdmcp",
+            "OpenGL"
+        },
+        shared = true,
+        libfiles = {
+            "/usr/lib/libraylib.so",
+            "/usr/lib/libXrandr.so",
+            "/usr/lib/libXinerama.so",
+            "/usr/lib/libXcursor.so",
+            "/usr/lib/libXrender.so",
+            "/usr/lib/libX11.so",
+            "/usr/lib/libXi.so",
+            "/usr/lib/libXfixes.so",
+            "/usr/lib/libXext.so",
+            "/usr/lib/libX11-xcb.so",
+            "/usr/lib/libxcb-composite.so",
+            "/usr/lib/libxcb-damage.so",
+            "/usr/lib/libxcb-dbe.so",
+            "/usr/lib/libxcb-dpms.so",
+            "/usr/lib/libxcb-dri2.so",
+            "/usr/lib/libxcb-dri3.so",
+            "/usr/lib/libxcb-glx.so",
+            "/usr/lib/libxcb-present.so",
+            "/usr/lib/libxcb-randr.so",
+            "/usr/lib/libxcb-record.so",
+            "/usr/lib/libxcb-render.so",
+            "/usr/lib/libxcb-res.so",
+            "/usr/lib/libxcb-screensaver.so",
+            "/usr/lib/libxcb-shape.so",
+            "/usr/lib/libxcb-shm.so",
+            "/usr/lib/libxcb-sync.so",
+            "/usr/lib/libxcb-xf86dri.so",
+            "/usr/lib/libxcb-xfixes.so",
+            "/usr/lib/libxcb-xinerama.so",
+            "/usr/lib/libxcb-xinput.so",
+            "/usr/lib/libxcb-xkb.so",
+            "/usr/lib/libxcb-xtest.so",
+            "/usr/lib/libxcb-xv.so",
+            "/usr/lib/libxcb-xvmc.so",
+            "/usr/lib/libxcb.so",
+            "/usr/lib/libXau.so",
+            "/usr/lib/libXdmcp.so"
+        },
         envs = {
             LD_LIBRARY_PATH = {
                 "/home/x/.xmake/packages/l/libxau/1.0.12/4bd21b12fdf24d29b2ee7332fdc32ae2/lib",
                 "/home/x/.xmake/packages/l/libxdmcp/1.1.5/2181f8c5c15b4020b09044e27c0d4b1b/lib",
                 "/home/x/.xmake/packages/l/libxcb/1.17.0/8f131d67eacb444ab57057e723e36722/lib",
-                "/home/x/.xmake/packages/l/libx11/1.8.13/67a3f9c0d7f34c08aa7751f256becb9a/lib",
-                "/home/x/.xmake/packages/l/libxfixes/6.0.1/bbda20ba10ea48d1af4e2871bda6248d/lib",
-                "/home/x/.xmake/packages/l/libxrender/0.9.12/8fa53b0226df4f379c9f0267c2f02b58/lib",
-                "/home/x/.xmake/packages/l/libxext/1.3.7/366e4a3c7fb240268b17734d502ffcc1/lib"
-            },
-            PYTHONPATH = {
-                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/lib/python3.14/site-packages",
-                "/home/x/.xmake/packages/p/python/3.14.3/5b29e409d339499392171d61390dfc38/lib/python3.14/site-packages"
+                "/home/x/.xmake/packages/l/libx11/1.8.13/67a3f9c0d7f34c08aa7751f256becb9a/lib"
             },
             PATH = {
                 "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
@@ -23,121 +95,62 @@
                 "/home/x/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin",
                 "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/bin",
                 "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/Scripts",
-                "/home/x/.xmake/packages/m/m4/1.4.19/8b7c7260096844c1a8b1c8d773e64b3d/bin",
-                "/home/x/.xmake/packages/a/autoconf/2.72/acf1540df7454fb895001231995955f2/bin",
-                "/home/x/.xmake/packages/a/automake/1.17/023583104f8e4bd8aa209b66cbeb4bee/bin",
-                "/home/x/.xmake/packages/l/libtool/2.6.0/e0bdba70c39545bb9c3dcc8050ee49d5/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/5b29e409d339499392171d61390dfc38/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/5b29e409d339499392171d61390dfc38/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/5b29e409d339499392171d61390dfc38/Scripts",
-                "/home/x/.xmake/packages/m/meson/1.12.0/42ccd5f432e84595b0840a12b029c615/bin",
-                "/home/x/.xmake/packages/b/bison/3.8.2/9487e874749340f7949f47fa547bc060/bin",
-                "/home/x/.xmake/packages/b/bison/3.8.2/9487e874749340f7949f47fa547bc060/bin"
+                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/Scripts"
+            },
+            PYTHONPATH = {
+                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/lib/python3.14/site-packages"
             }
         },
-        shared = true,
-        links = "SDL3",
-        libfiles = {
-            "/usr/lib/libSDL3.so",
-            "/usr/lib/libSDL3_test.a"
-        },
-        __enabled = true,
-        version = "3.4.16"
+        __requirestr = "raylib",
+        __enabled = true
     },
     magic_enum = {
+        license = "MIT",
+        version = "v0.9.8",
+        __enabled = true,
+        sysincludedirs = {
+            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
+            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include/magic_enum"
+        },
+        installdir = "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351",
         __requirestr = "magic_enum",
         envs = {
             PATH = {
                 "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
                 "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
             }
-        },
-        sysincludedirs = {
-            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
-            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include/magic_enum"
-        },
-        license = "MIT",
-        installdir = "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351",
-        __enabled = true,
-        version = "v0.9.8"
+        }
     },
-    glad = {
-        __requirestr = "glad",
-        license = "MIT",
-        installdir = "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879",
-        __enabled = true,
-        version = "v2.0.8",
-        static = true,
+    fmt = {
+        version = "12.2.0",
+        shared = true,
         envs = {
-            PYTHONPATH = {
-                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/lib/python3.14/site-packages"
-            },
             PATH = {
                 "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
-                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/bin",
-                "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/Scripts"
+                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
             }
         },
-        syslinks = "dl",
-        sysincludedirs = "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879/include",
-        links = "glad",
-        linkdirs = "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879/lib",
-        libfiles = "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879/lib/libglad.a"
+        links = "fmt",
+        libfiles = {
+            "/usr/lib/libfmt-c.a",
+            "/usr/lib/libfmt.so"
+        },
+        static = true,
+        __requirestr = "fmt",
+        __enabled = true
     },
     glaze = {
+        license = "MIT",
+        version = "v7.9.0",
+        __enabled = true,
+        sysincludedirs = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617/include",
+        installdir = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617",
         __requirestr = "glaze",
         envs = {
             PATH = {
                 "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
                 "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
             }
-        },
-        sysincludedirs = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617/include",
-        license = "MIT",
-        installdir = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617",
-        __enabled = true,
-        version = "v7.9.0"
-    },
-    freetype = {
-        __requirestr = "freetype",
-        shared = true,
-        envs = {
-            PATH = {
-                "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
-                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
-            }
-        },
-        links = {
-            "freetype",
-            "z"
-        },
-        sysincludedirs = {
-            "/usr/include/freetype2",
-            "/usr/include/libpng16"
-        },
-        libfiles = "/usr/lib/libfreetype.so",
-        __enabled = true,
-        version = "26.6.20"
-    },
-    fmt = {
-        __requirestr = "fmt",
-        static = true,
-        envs = {
-            PATH = {
-                "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
-                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
-            }
-        },
-        shared = true,
-        links = "fmt",
-        libfiles = {
-            "/usr/lib/libfmt-c.a",
-            "/usr/lib/libfmt.so"
-        },
-        __enabled = true,
-        version = "12.2.0"
+        }
     }
 }

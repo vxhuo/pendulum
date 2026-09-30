@@ -4,6 +4,16 @@
         "xmake lua /usr/share/xmake/actions/build/cleaner.lua",
         "xmake r",
         "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
+        "xmake r",
         "xmake r"
     }
 }

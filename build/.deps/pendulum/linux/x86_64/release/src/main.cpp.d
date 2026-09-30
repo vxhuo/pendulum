@@ -1,4 +1,22 @@
 {
+    moduleinfo = "{\
+  \"revision\": 0,\
+  \"rules\": [\
+    {\
+      \"primary-output\": \"build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o\",\
+      \"requires\": [\
+        {\
+          \"logical-name\": \"types\"\
+        }\
+      ]\
+    }\
+  ],\
+  \"version\": 1\
+}\
+",
+    files = {
+        "src/main.cpp"
+    },
     values = {
         "-Qunused-arguments",
         "-m64",
@@ -9,12 +27,6 @@
         "-Wpedantic",
         "-Werror",
         "-std=c++26",
-        "-isystem",
-        "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879/include",
-        "-isystem",
-        "/usr/include/freetype2",
-        "-isystem",
-        "/usr/include/libpng16",
         "-isystem",
         "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
         "-isystem",
@@ -34,23 +46,5 @@
         "-march=native",
         "-flto=thin",
         "-DNDEBUG"
-    },
-    moduleinfo = "{\
-  \"revision\": 0,\
-  \"rules\": [\
-    {\
-      \"primary-output\": \"build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o\",\
-      \"requires\": [\
-        {\
-          \"logical-name\": \"types\"\
-        }\
-      ]\
-    }\
-  ],\
-  \"version\": 1\
-}\
-",
-    files = {
-        "src/main.cpp"
     }
 }

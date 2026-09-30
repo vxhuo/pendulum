@@ -16,9 +16,7 @@ set_policy("build.c++.modules.gcc.fallbackscanner", true)
 
 local packages =
 {
-    "libsdl3",
-    "glad",
-    "freetype",
+    "raylib",
     "magic_enum",
     "glaze",
     "fmt"
