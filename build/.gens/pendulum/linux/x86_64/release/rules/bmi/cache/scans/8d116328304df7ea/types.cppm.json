@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "build/.objs/pendulum/linux/x86_64/release/src/types.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "types",
+          "source-path": "src/types.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

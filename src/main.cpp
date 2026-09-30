@@ -2,7 +2,10 @@
 #include <fmt/core.h>
 
 
-auto main(int argc, char **argv) -> i32
-{
+import types;
 
+
+auto main() -> s32
+{
+    fmt::println("hello world");
 }

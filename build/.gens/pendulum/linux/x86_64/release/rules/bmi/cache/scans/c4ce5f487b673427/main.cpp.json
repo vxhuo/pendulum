@@ -1,0 +1,14 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o",
+      "requires": [
+        {
+          "logical-name": "types"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,49 @@
+{
+    values = {
+        "/usr/bin/clang++",
+        {
+            "-Qunused-arguments",
+            "-m64",
+            "-fvisibility=hidden",
+            "-fvisibility-inlines-hidden",
+            "-Wall",
+            "-Wextra",
+            "-Wpedantic",
+            "-Werror",
+            "-std=c++26",
+            "-isystem",
+            "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879/include",
+            "-isystem",
+            "/usr/include/freetype2",
+            "-isystem",
+            "/usr/include/libpng16",
+            "-isystem",
+            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
+            "-isystem",
+            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include/magic_enum",
+            "-isystem",
+            "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617/include",
+            "-Wshadow",
+            "-Wconversion",
+            "-Wformat=2",
+            "-Wcast-align",
+            "-Wimplicit-fallthrough",
+            "-fno-exceptions",
+            "-fno-rtti",
+            "-Wno-c23-extensions",
+            "-Wno-error=deprecated-declarations",
+            "-O3",
+            "-march=native",
+            "-flto=thin",
+            "-DNDEBUG",
+            "-fmodule-file=types=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm"
+        }
+    },
+    lastmtime = 0,
+    depfiles = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o: src/main.cpp\
+",
+    files = {
+        "src/main.cpp"
+    },
+    depfiles_format = "gcc"
+}

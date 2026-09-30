@@ -1,0 +1,63 @@
+{
+    files = {
+        "/usr/include/c++/16/bits/std.compat.cc"
+    },
+    values = {
+        "-Qunused-arguments",
+        "-m64",
+        "-fvisibility=hidden",
+        "-fvisibility-inlines-hidden",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-std=c++26",
+        "-isystem",
+        "/home/x/.xmake/packages/g/glad/v2.0.8/464cac51d1314380be9d6200208c4879/include",
+        "-isystem",
+        "/usr/include/freetype2",
+        "-isystem",
+        "/usr/include/libpng16",
+        "-isystem",
+        "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
+        "-isystem",
+        "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include/magic_enum",
+        "-isystem",
+        "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617/include",
+        "-Wshadow",
+        "-Wconversion",
+        "-Wformat=2",
+        "-Wcast-align",
+        "-Wimplicit-fallthrough",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-Wno-c23-extensions",
+        "-Wno-error=deprecated-declarations",
+        "-O3",
+        "-march=native",
+        "-flto=thin",
+        "-DNDEBUG"
+    },
+    moduleinfo = "{\
+  \"revision\": 0,\
+  \"rules\": [\
+    {\
+      \"primary-output\": \"build/.objs/pendulum/linux/x86_64/release/usr/include/c++/16/bits/std.compat.cc.o\",\
+      \"provides\": [\
+        {\
+          \"is-interface\": true,\
+          \"logical-name\": \"std.compat\",\
+          \"source-path\": \"/usr/include/c++/16/bits/std.compat.cc\"\
+        }\
+      ],\
+      \"requires\": [\
+        {\
+          \"logical-name\": \"std\"\
+        }\
+      ]\
+    }\
+  ],\
+  \"version\": 1\
+}\
+"
+}
