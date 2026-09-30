@@ -1,4 +1,7 @@
 {
+    files = {
+        "src/tick.cppm"
+    },
     values = {
         "/usr/bin/clang++",
         {
@@ -30,11 +33,10 @@
             "-march=native",
             "-flto=thin",
             "-DNDEBUG",
-            "-fmodule-file=types=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm"
+            "-fmodule-file=pendulum=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/32f32a79c37f0f45/pendulum.pcm",
+            "-fmodule-file=types=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm",
+            "-fmodule-file=physics=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/0641b244a5453ab4/physics.pcm"
         }
     },
-    files = {
-        "src/tick.cppm"
-    },
-    lastmtime = 1790739754
+    lastmtime = 0
 }

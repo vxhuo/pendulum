@@ -9,6 +9,9 @@
         },
         {
           "logical-name": "tick"
+        },
+        {
+          "logical-name": "pendulum"
         }
       ]
     }

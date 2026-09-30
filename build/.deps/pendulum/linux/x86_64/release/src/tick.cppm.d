@@ -1,4 +1,7 @@
 {
+    files = {
+        "src/tick.cppm"
+    },
     values = {
         "-Qunused-arguments",
         "-m64",
@@ -29,9 +32,6 @@
         "-flto=thin",
         "-DNDEBUG"
     },
-    files = {
-        "src/tick.cppm"
-    },
     moduleinfo = "{\
   \"revision\": 0,\
   \"rules\": [\
@@ -47,6 +47,12 @@
       \"requires\": [\
         {\
           \"logical-name\": \"types\"\
+        },\
+        {\
+          \"logical-name\": \"physics\"\
+        },\
+        {\
+          \"logical-name\": \"pendulum\"\
         }\
       ]\
     }\

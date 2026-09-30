@@ -1,7 +1,4 @@
 {
-    files = {
-        "src/main.cpp"
-    },
     moduleinfo = "{\
   \"revision\": 0,\
   \"rules\": [\
@@ -13,6 +10,9 @@
         },\
         {\
           \"logical-name\": \"tick\"\
+        },\
+        {\
+          \"logical-name\": \"pendulum\"\
         }\
       ]\
     }\
@@ -20,6 +20,9 @@
   \"version\": 1\
 }\
 ",
+    files = {
+        "src/main.cpp"
+    },
     values = {
         "-Qunused-arguments",
         "-m64",

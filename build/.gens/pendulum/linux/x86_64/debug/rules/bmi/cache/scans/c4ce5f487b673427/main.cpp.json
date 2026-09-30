@@ -1,0 +1,23 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "build/.objs/pendulum/linux/x86_64/debug/src/main.cpp.o",
+      "requires": [
+        {
+          "logical-name": "types"
+        },
+        {
+          "logical-name": "tick"
+        },
+        {
+          "logical-name": "pendulum"
+        },
+        {
+          "logical-name": "physics"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

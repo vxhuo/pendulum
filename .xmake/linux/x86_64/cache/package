@@ -1,47 +1,5 @@
 {
     raylib = {
-        version = "6.0.0",
-        links = {
-            "raylib",
-            "Xrandr",
-            "Xinerama",
-            "Xcursor",
-            "Xrender",
-            "X11",
-            "Xi",
-            "Xfixes",
-            "Xext",
-            "X11-xcb",
-            "xcb",
-            "xcb-composite",
-            "xcb-damage",
-            "xcb-dbe",
-            "xcb-dpms",
-            "xcb-dri2",
-            "xcb-dri3",
-            "xcb-glx",
-            "xcb-present",
-            "xcb-randr",
-            "xcb-record",
-            "xcb-render",
-            "xcb-res",
-            "xcb-screensaver",
-            "xcb-shape",
-            "xcb-shm",
-            "xcb-sync",
-            "xcb-xf86dri",
-            "xcb-xfixes",
-            "xcb-xinerama",
-            "xcb-xinput",
-            "xcb-xkb",
-            "xcb-xtest",
-            "xcb-xv",
-            "xcb-xvmc",
-            "Xau",
-            "Xdmcp",
-            "OpenGL"
-        },
-        shared = true,
         libfiles = {
             "/usr/lib/libraylib.so",
             "/usr/lib/libXrandr.so",
@@ -101,56 +59,98 @@
                 "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b/lib/python3.14/site-packages"
             }
         },
+        links = {
+            "raylib",
+            "Xrandr",
+            "Xinerama",
+            "Xcursor",
+            "Xrender",
+            "X11",
+            "Xi",
+            "Xfixes",
+            "Xext",
+            "X11-xcb",
+            "xcb",
+            "xcb-composite",
+            "xcb-damage",
+            "xcb-dbe",
+            "xcb-dpms",
+            "xcb-dri2",
+            "xcb-dri3",
+            "xcb-glx",
+            "xcb-present",
+            "xcb-randr",
+            "xcb-record",
+            "xcb-render",
+            "xcb-res",
+            "xcb-screensaver",
+            "xcb-shape",
+            "xcb-shm",
+            "xcb-sync",
+            "xcb-xf86dri",
+            "xcb-xfixes",
+            "xcb-xinerama",
+            "xcb-xinput",
+            "xcb-xkb",
+            "xcb-xtest",
+            "xcb-xv",
+            "xcb-xvmc",
+            "Xau",
+            "Xdmcp",
+            "OpenGL"
+        },
         __requirestr = "raylib",
+        shared = true,
+        version = "6.0.0",
         __enabled = true
     },
-    magic_enum = {
-        license = "MIT",
-        version = "v0.9.8",
-        __enabled = true,
-        sysincludedirs = {
-            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
-            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include/magic_enum"
-        },
-        installdir = "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351",
-        __requirestr = "magic_enum",
-        envs = {
-            PATH = {
-                "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
-                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
-            }
-        }
-    },
     fmt = {
+        __requirestr = "fmt",
         version = "12.2.0",
-        shared = true,
-        envs = {
-            PATH = {
-                "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
-                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
-            }
-        },
+        static = true,
         links = "fmt",
+        shared = true,
+        __enabled = true,
         libfiles = {
             "/usr/lib/libfmt-c.a",
             "/usr/lib/libfmt.so"
         },
-        static = true,
-        __requirestr = "fmt",
-        __enabled = true
-    },
-    glaze = {
-        license = "MIT",
-        version = "v7.9.0",
-        __enabled = true,
-        sysincludedirs = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617/include",
-        installdir = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617",
-        __requirestr = "glaze",
         envs = {
             PATH = {
                 "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
                 "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
             }
         }
+    },
+    glaze = {
+        license = "MIT",
+        installdir = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617",
+        envs = {
+            PATH = {
+                "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
+                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
+            }
+        },
+        sysincludedirs = "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617/include",
+        __enabled = true,
+        version = "v7.9.0",
+        __requirestr = "glaze"
+    },
+    magic_enum = {
+        license = "MIT",
+        installdir = "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351",
+        envs = {
+            PATH = {
+                "/home/x/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
+                "/home/x/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
+            }
+        },
+        sysincludedirs = {
+            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include",
+            "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351/include/magic_enum"
+        },
+        __enabled = true,
+        version = "v0.9.8",
+        __requirestr = "magic_enum"
     }
 }

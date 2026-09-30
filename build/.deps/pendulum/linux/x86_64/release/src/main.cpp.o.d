@@ -1,4 +1,5 @@
 {
+    depfiles_format = "gcc",
     files = {
         "src/main.cpp"
     },
@@ -33,12 +34,13 @@
             "-march=native",
             "-flto=thin",
             "-DNDEBUG",
+            "-fmodule-file=pendulum=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/32f32a79c37f0f45/pendulum.pcm",
+            "-fmodule-file=types=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm",
             "-fmodule-file=tick=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/7768fcb61f880c03/tick.pcm",
-            "-fmodule-file=types=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/8d116328304df7ea/types.pcm"
+            "-fmodule-file=physics=build/.gens/pendulum/linux/x86_64/release/rules/bmi/cache/interfaces/0641b244a5453ab4/physics.pcm"
         }
     },
-    lastmtime = 0,
-    depfiles_format = "gcc",
+    lastmtime = 1790741403,
     depfiles = "build/.objs/pendulum/linux/x86_64/release/src/main.cpp.o: src/main.cpp\
 "
 }
