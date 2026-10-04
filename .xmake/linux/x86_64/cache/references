@@ -1,8 +1,0 @@
-{
-    packages = {
-        "/home/x/.xmake/packages/p/python/3.14.3/0072a4c0d4e0450b8e54bb510238102b",
-        "/home/x/.xmake/packages/x/xtrans/1.6.0/588d85a9c99148b8ae87dee11b39ab40",
-        "/home/x/.xmake/packages/m/magic_enum/v0.9.8/ad3b8bc82c6d4afbbac1a73b09679351",
-        "/home/x/.xmake/packages/g/glaze/v7.9.0/e98c7b9208604f118e0077f0a8799617"
-    }
-}
